@@ -89,7 +89,8 @@ const SideBar = ({ show, handleClose }) => {
                                     <span>
                                         {/* Brand: {item.brand} <br /> */}
                                         Quantity: {item?.quantity} <br />
-                                        Price: {item.product?.price}
+                                        Price: {item.product?.price} <br/>
+                                        Total: {item.product?.price * item?.quantity}
                                     </span>
                                 </Card.Text>
                                 <div

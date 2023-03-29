@@ -25,18 +25,18 @@ const NavBar = () => {
             <Navbar bg="danger" variant="dark">
                 <Container >
                     <Navbar.Brand as={Link}  to="/">
-                       <h1 style={{fontSize:'5rem'}}>Ecommerce</h1> 
+                       <h1 style={{fontSize:'2.5em'}}>Ecommerce</h1> 
                     </Navbar.Brand>
                     <div>
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/login">
-                                <div style={{fontSize:'2rem', margin:'0 2rem'}}><i className='bx bxs-user'></i></div>
+                                <div style={{fontSize:'1.5em', margin:'0 1.5em'}}><i className='bx bxs-user'></i></div>
                             </Nav.Link>
                             <Nav.Link as={Link} to="/purchases">
-                                <div style={{fontSize:'2rem',margin:'0 2rem'}}><i className='bx bx-box'></i></div>
+                                <div style={{fontSize:'1.5em',margin:'0 1.5em'}}><i className='bx bx-box'></i></div>
                             </Nav.Link>
                             <Nav.Link onClick={handleShow} href="#">
-                                <div style={{fontSize:'2rem',margin:'0 2rem'}}><i className='bx bx-cart'></i></div>
+                                <div style={{fontSize:'1.5em',margin:'0 1.5em'}}><i className='bx bx-cart'></i></div>
                             </Nav.Link>
                         </Nav>
                     </div>

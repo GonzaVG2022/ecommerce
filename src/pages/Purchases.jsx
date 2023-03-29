@@ -49,9 +49,11 @@ const Purchases = () => {
                                 alignpurchases: "center",
                             }}
                         >
+                            
                             {purchase?.quantity}
                         </Card.Text>
-                        <Card.Text>{purchase.product?.price}</Card.Text>
+                        <Card.Text>Unit price <br/> {purchase.product?.price}</Card.Text>
+                        <Card.Text>Total <br/> {purchase.product?.price * purchase?.quantity}</Card.Text>
                         <Button
                             variant="primary"
                             onClick={() => handleShow(purchase)}
