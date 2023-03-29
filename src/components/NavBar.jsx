@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import SideBar from "./SideBar";
 import { useState } from "react";
+// import '../assets/css/navBar.css'
 
 
 const NavBar = () => {
@@ -22,7 +23,7 @@ const NavBar = () => {
 
     return (
         <>
-            <Navbar bg="danger" variant="dark">
+            <Navbar bg="danger" variant="dark" expand="lg">
                 <Container >
                     <Navbar.Brand as={Link}  to="/">
                        <h1 style={{fontSize:'2.5em'}}>Ecommerce</h1> 
@@ -30,13 +31,13 @@ const NavBar = () => {
                     <div>
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/login">
-                                <div style={{fontSize:'1.5em', margin:'0 1.5em'}}><i className='bx bxs-user'></i></div>
+                                <div style={{fontSize:'1.5em'}}><i className='bx bxs-user'></i></div>
                             </Nav.Link>
                             <Nav.Link as={Link} to="/purchases">
-                                <div style={{fontSize:'1.5em',margin:'0 1.5em'}}><i className='bx bx-box'></i></div>
+                                <div style={{fontSize:'1.5em'}}><i className='bx bx-box'></i></div>
                             </Nav.Link>
                             <Nav.Link onClick={handleShow} href="#">
-                                <div style={{fontSize:'1.5em',margin:'0 1.5em'}}><i className='bx bx-cart'></i></div>
+                                <div style={{fontSize:'1.5em'}}><i className='bx bx-cart'></i></div>
                             </Nav.Link>
                         </Nav>
                     </div>
