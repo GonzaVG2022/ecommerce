@@ -48,7 +48,7 @@ const Home = () => {
     };
 
     return (
-        <div style={{margin:'6em 0'}}>
+        <div style={{ margin:'15em 0' }}>
            
             <Row xs={1} md={2} lg={2}>
                 <Col>
@@ -92,6 +92,7 @@ const Home = () => {
                         key={category?.id}
                         variant="outline-primary"
                         size="sm"
+                        style={{   margin: "0.1rem"}}
                         onClick={() =>
                             dispatch(filterCategoriesThunk(category?.id))
                         }
@@ -122,7 +123,7 @@ const Home = () => {
                                         display: "flex",
                                         justifyContent: "center",
                                         width: "100% ",
-                                        
+                                                                             
                                     }}
                                 >
                                     <img
