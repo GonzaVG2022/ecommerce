@@ -48,12 +48,8 @@ const Home = () => {
     };
 
     return (
-        <div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+        <div style={{margin:'6em 0'}}>
+           
             <Row xs={1} md={2} lg={2}>
                 <Col>
                     <InputGroup className="mb-3">
@@ -83,11 +79,13 @@ const Home = () => {
             <Col
                 style={{
                     position: "absolute",
-                    top: "6rem",
-                    right: "3rem",
-                    marginLeft: "3rem",
+                    top: "9rem",
+                    right: "4rem",
+                    marginLeft: "4rem",
+                                        
                 }}
             >
+                
                 <h4 style={{ color: "#456268",marginTop:'2em' }}>Your favorite categories!!</h4>
                 {categories?.map((category) => (
                     <Button
@@ -124,6 +122,7 @@ const Home = () => {
                                         display: "flex",
                                         justifyContent: "center",
                                         width: "100% ",
+                                        
                                     }}
                                 >
                                     <img
@@ -181,6 +180,7 @@ const Home = () => {
                                     style={{
                                         display: "flex",
                                         justifyContent: "space-around",
+                                        
                                     }}
                                 >
                                     <Button
@@ -202,6 +202,7 @@ const Home = () => {
                     </Col>
                 ))}
             </Row>
+            
         </div>
     );
 };

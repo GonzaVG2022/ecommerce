@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import SideBar from "./SideBar";
 import { useState } from "react";
-// import '../assets/css/navBar.css'
+
 
 
 const NavBar = () => {
@@ -23,7 +23,7 @@ const NavBar = () => {
 
     return (
         <>
-            <Navbar bg="danger" variant="dark" expand="lg">
+            <Navbar className="nav" bg="danger" variant="dark" expand="lg">
                 <Container >
                     <Navbar.Brand as={Link}  to="/">
                        <h1 style={{fontSize:'2.5em'}}>Ecommerce</h1> 
